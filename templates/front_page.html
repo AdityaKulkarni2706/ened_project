@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palm Pro+</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-4">Palm Pro+</h1>
+        
+        <!-- Original data display section -->
+        <div class="mb-8">
+            <button id="display-btn" class="bg-blue-500 text-white px-4 py-2 rounded">Display Data</button>
+            <div id="display_data">
+                <p id="data"></p>
+            </div>
+        </div>
+
+        <!-- React bars section -->
+        <div id="root"></div>
+    </div>
+
+    <script type="text/babel" src="../static/app.js"></script>
+    <script src="../static/connector.js"></script>
+</body>
+</html>
